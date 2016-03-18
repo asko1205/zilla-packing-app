@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "out": "built/out.js",
+        "sourceMap": true,
+        "target": "es5"
+    },
+    "files": [
+        "src/app/components/navbar/navbar.directive.ts",
+        "src/app/components/sampleTable/sampleTable.directive.ts",
+        "src/app/components/userMessaging/userMessaging.directive.ts",
+        "src/app/edit/edit.controller.ts",
+        "src/app/main/main.controller.ts",
+        "src/app/index.config.ts",
+        "src/app/index.module.ts",
+        "src/app/index.route.ts",
+        "src/app/index.run.ts",
+        ".tmp/typings/tsd.d.ts"
+    ]
+}

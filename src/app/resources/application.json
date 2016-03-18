@@ -1,0 +1,4 @@
+{
+  "kaijuAPIUrlPrefix": "http://192.168.99.100:8091/kaiju/orchestrator/v1",
+  "descriptionTextLimitConstant": 100
+}
