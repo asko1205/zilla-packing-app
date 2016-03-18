@@ -2,8 +2,13 @@
  *  If you want to override some bootstrap variables, you have to change values here.
  *  The list of variables are listed here bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap/_variables.scss
  */
-$navbar-inverse-link-color: #5AADBB;
-$icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+ $navbar-inverse-link-color: #5AADBB;
+ $icon-font-path: "../../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+ $dark-grey: #4D4D4D;
+ $light-grey: #A6A6A6;
+ $customer-connector-ui-margin: 0 200 0 200;
+ $regular-font: "HelveticaNeue", "Helvetica Neue", Helvetica, "Lucida Grande", Arial, sans-serif;
+ $fun-font: 'Luckiest Guy', cursive;
 
 /**
  *  Do not remove this comments bellow. It's the markers used by wiredep to inject

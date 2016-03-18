@@ -1,24 +1,30 @@
 <div>
-  <acme-navbar creationDate="main.creationDate" />
+  <acme-navbar/>
 </div>
 
 <div class="container">
-
-  <div class="row">
-    <h1>Sample Main Page </h1>
-  </div>
-  
-  <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-10">
-      <h3>Sample Table</h3>
+  <div class="main-content-title">
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-8">
+          <h1 class="mainTitle welcomeTitle">Zilla Packing App</h1>
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-10">
-      <sample-table connectors="main.connectors" form-ids = "main.formIds" statuses = "main.statuses"></sample-table>
-    </div>
+  <div class="main-selection">
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-8">
+        <div class="select-box">
+          <a ui-sref="create"><p class="option-text">Create new list</p></a>
+        </div>
+        <div class="select-box">
+          <a ui-sref="manage"><p class="option-text">Manage existing list</p></a>
+        </div>
+      </div>
+  </div>
+  <div class="main-content-image">
+    <img src="assets/images/zilla-suitcase.svg" class="monsterImage" alt="zillaSuitcase">
   </div>
 
 </div>

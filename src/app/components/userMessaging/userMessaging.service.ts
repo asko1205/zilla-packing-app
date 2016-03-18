@@ -1,7 +1,7 @@
 /// <reference path="../../../../.tmp/typings/tsd.d.ts" />
 /// <reference path="../../../../.tmp/typings/angularjs/angular.d.ts" />
 
-module szAngularBaseProject {
+module zillaPackingApp {
  	'use strict';
 	export class UserMessaging {
 

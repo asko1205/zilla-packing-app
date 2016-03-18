@@ -1,0 +1,44 @@
+.monsterImage{
+	height:700px;
+	width:auto;
+	position:absolute;
+	right: 500px;
+  bottom: -408px;
+  opacity: 0.3;
+}
+
+.main-content-image{
+	position:relative;
+}
+
+.mainTitle.welcomeTitle{
+	font-family: $fun-font;
+	font-size:80px;
+	color: $dark-grey;
+	margin-left: 70px;
+}
+
+.main-selection .select-box{
+	&:hover{
+		background-color:#337AB7;
+	}
+	background-color:#97BBDA;
+	display:block;
+	padding: 10px 10px 10px 10px;
+	margin: 0 0 10px 70px;
+	border-radius:5px;
+	width:280px;
+	cursor:pointer;
+
+	.option-text{
+		font-size: 20px;
+	    padding-top: 11px;
+	    padding-bottom: 3px;
+	    color: #FFFFFF;
+	    font-weight: 500;
+	}
+
+	a{
+		text-decoration: none;
+	}
+}

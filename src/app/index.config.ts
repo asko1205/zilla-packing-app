@@ -1,4 +1,4 @@
-module szAngularBaseProject {
+module zillaPackingApp {
   'use strict';
 
   export class Config {

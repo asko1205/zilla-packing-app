@@ -16,10 +16,10 @@ declare var malarkey: any;
 declare var toastr: Toastr;
 declare var moment: moment.MomentStatic;
 
-module szAngularBaseProject {
+module zillaPackingApp {
   'use strict';
 
-  angular.module('szAngularBaseProject', ['ngAnimate', 'ngCookies', 'ngSanitize', 'ngResource', 'ui.router', 'ui.bootstrap', 'smart-table', 'xeditable', 'ngDialog', 'app.config'])
+  angular.module('zillaPackingApp', ['ngAnimate', 'ngCookies', 'ngSanitize', 'ngResource', 'ui.router', 'ui.bootstrap', 'smart-table', 'xeditable', 'ngDialog', 'app.config'])
     .constant('malarkey', malarkey)
     .constant('toastr', toastr)
     .constant('moment', moment)

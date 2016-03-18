@@ -1,18 +1,23 @@
-<nav class="navbar navbar-static-top navbar-inverse">
+<nav class="navbar navbar-static-top navbar-inverse zpa-navbar">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" ui-sref="home">
-        <span class="glyphicon glyphicon-home"></span> SZ's Base Angular Project
-      </a>
+      <div class="row">
+        <a class="navbar-brand" ui-sref="home">
+          <div class="col-md-2">
+            <img src="assets/images/zilla.svg" class="navbar-image" alt="zilla">
+          </div>
+          <div class="col-md-10">
+            <p>
+              Zilla Packing App
+            </p>
+          </div>
+        </a>
+      </div>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
       <ul class="nav navbar-nav">
         <li><a ui-sref="edit">Edit</a></li>
-      </ul>
-
-      <ul class="nav navbar-nav navbar-right acme-navbar-text">
-        <li>Application was created {{ vm.relativeDate }}.</li>
       </ul>
     </div>
   </div>

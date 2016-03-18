@@ -1,4 +1,4 @@
-module szAngularBaseProject {
+module zillaPackingApp {
   'use strict';
 
   /** @ngInject */
@@ -57,4 +57,3 @@ module szAngularBaseProject {
 
 
 }
-

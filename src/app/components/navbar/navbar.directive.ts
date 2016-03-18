@@ -1,4 +1,4 @@
-module szAngularBaseProject {
+module zillaPackingApp {
   'use strict';
 
   /** @ngInject */
@@ -7,7 +7,6 @@ module szAngularBaseProject {
     return {
       restrict: 'E',
       scope: {
-        creationDate: '='
       },
       templateUrl: 'app/components/navbar/navbar.html',
       controller: NavbarController,
@@ -19,10 +18,8 @@ module szAngularBaseProject {
 
   /** @ngInject */
   class NavbarController {
-    public relativeDate: string;
 
-    constructor(moment) {
-      this.relativeDate = moment(1444600911218).fromNow();
+    constructor() {
     }
   }
 }
