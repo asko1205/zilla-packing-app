@@ -6,7 +6,7 @@
 /// <reference path="index.config.ts" />
 /// <reference path="index.run.ts" />
 /// <reference path="main/main.controller.ts" />
-/// <reference path="edit/edit.controller.ts" />
+/// <reference path="create/create.controller.ts" />
 /// <reference path="../app/components/navbar/navbar.directive.ts" />
 /// <reference path="../app/components/sampleTable/sampleTable.directive.ts" />
 /// <reference path="../app/components/userMessaging/userMessaging.service.ts" />
@@ -30,7 +30,7 @@ module zillaPackingApp {
     .run(RunBlock)
     .service('userMessaging', UserMessaging)
     .controller('MainController', MainController)
-    .controller('EditController', EditController)
+    .controller('CreateController', CreateController)
     .directive('acmeNavbar', acmeNavbar)
     .directive('sampleTable', sampleTable)
     .directive('userMessaging', userMessaging);

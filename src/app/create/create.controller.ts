@@ -1,7 +1,7 @@
 module zillaPackingApp {
   'use strict';
 
-  export class EditController {
+  export class CreateController {
     public textLimit;
     static $inject = ["descriptionTextLimitConstant"];
     /* @ngInject */
