@@ -7,7 +7,8 @@ module zillaPackingApp {
     return {
       restrict: 'E',
       scope: {
-        itemList: '='
+        itemList: '=',
+        safeSrcItems: '='
       },
       templateUrl: 'app/components/packingListTable/packingListTable.html',
       controller: packingListTableController,

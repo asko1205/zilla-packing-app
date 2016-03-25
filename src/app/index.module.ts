@@ -19,7 +19,7 @@ declare var moment: moment.MomentStatic;
 module zillaPackingApp {
   'use strict';
 
-  angular.module('zillaPackingApp', ['ngAnimate', 'ngCookies', 'ngSanitize', 'ngResource', 'ui.router', 'ui.bootstrap', 'smart-table', 'xeditable', 'ngDialog', 'app.config'])
+  angular.module('zillaPackingApp', ['ngAnimate', 'ngCookies', 'ngSanitize', 'ngResource', 'ui.router', 'ui.bootstrap', 'smart-table', 'xeditable', 'ngDialog', 'app.config', 'firebase'])
     .constant('malarkey', malarkey)
     .constant('toastr', toastr)
     .constant('moment', moment)
