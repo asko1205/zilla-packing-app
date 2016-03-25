@@ -1,0 +1,23 @@
+<div class="modal-header">
+      <h3 class="modal-title">Add a new item</h3>
+  </div>
+  <div class="modal-body">
+      <div class="row">
+        <div class="col-md-1">
+          <button class="btn btn-default btn-xs addCategoryImageBtn" ng-click="mic.addItem()" title="Add a new item">
+            <img src="assets/images/add.png" class="addImage addCategoryImage" alt="add">
+          </button>
+        </div>
+        <div class="col-md-10">
+          <input type="text" class="form-control newCategoryField" ng-model="mic.newCategoryName"></div>
+        </div>
+        <div class="col-md-10">
+          <tags-input ng-model="tags"></tags-input>
+        </div>
+        {{tags}}
+      </div>
+  </div>
+  <div class="modal-footer">
+      <user-messaging></user-messaging>
+      <button class="btn btn-primary" type="button" ng-click="mic.ok()">Finished</button>
+  </div>

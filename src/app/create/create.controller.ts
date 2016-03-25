@@ -5,13 +5,13 @@ module zillaPackingApp {
   export class CreateController {
     public itemList;
     public items;
-    public data;
+    public selected;
     public safeSrcItems;
 
-    static $inject = ["$firebaseObject", "$firebaseArray"];
+    static $inject = ["$firebaseObject", "$firebaseArray", "$modal"];
 
     /* @ngInject */
-    constructor ($firebaseObject, $firebaseArray) {
+    constructor ($firebaseObject, $firebaseArray, private $modal) {
       var ref = new Firebase("https://zillapack.firebaseio.com");
       this.items = $firebaseArray(ref);
       this.safeSrcItems = this.items;
@@ -21,6 +21,17 @@ module zillaPackingApp {
       this.items.$add({
         itemName: "watershoes",
         tags: ["beach", "shoes"]
+      });
+    }
+
+    //-------- modal features ------------
+
+    public open = (size) => {
+      var modalInstance = this.$modal.open({
+        templateUrl: 'app/components/modal/modal.html',
+        controller: 'ModalInstanceCtrl',
+        controllerAs: 'mic',
+        size: size
       });
     }
 
