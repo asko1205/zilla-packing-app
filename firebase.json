@@ -1,0 +1,9 @@
+{
+  "firebase": "zillapack",
+  "public": "dist",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
