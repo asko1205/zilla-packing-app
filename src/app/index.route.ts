@@ -11,11 +11,11 @@ module zillaPackingApp {
           controller: 'MainController',
           controllerAs: 'main'
         })
-        .state('edit', {
-          url: '/edit',
-          templateUrl: 'app/edit/edit.html',
-          controller: 'EditController',
-          controllerAs: 'edit'
+        .state('create', {
+          url: '/create',
+          templateUrl: 'app/create/create.html',
+          controller: 'CreateController',
+          controllerAs: 'create'
         });
 
       $urlRouterProvider.otherwise('/');

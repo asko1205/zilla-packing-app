@@ -2,11 +2,14 @@ module zillaPackingApp {
   'use strict';
 
   export class CreateController {
-    public textLimit;
-    static $inject = ["descriptionTextLimitConstant"];
+    public itemList;
+
+    static $inject = [];
+
     /* @ngInject */
-    constructor (private descriptionTextLimitConstant) {
-      this.textLimit = this.descriptionTextLimitConstant;
+    constructor () {
+      
+      this.itemList = [{"itemName":"watershoes", "tags":["beach", "shoes"]}];
     }
 
   }

@@ -8,7 +8,7 @@
 /// <reference path="main/main.controller.ts" />
 /// <reference path="create/create.controller.ts" />
 /// <reference path="../app/components/navbar/navbar.directive.ts" />
-/// <reference path="../app/components/sampleTable/sampleTable.directive.ts" />
+/// <reference path="../app/components/packingListTable/packingListTable.directive.ts" />
 /// <reference path="../app/components/userMessaging/userMessaging.service.ts" />
 /// <reference path="../app/components/userMessaging/userMessaging.directive.ts" />
 
@@ -32,6 +32,6 @@ module zillaPackingApp {
     .controller('MainController', MainController)
     .controller('CreateController', CreateController)
     .directive('acmeNavbar', acmeNavbar)
-    .directive('sampleTable', sampleTable)
+    .directive('packingListTable', packingListTable)
     .directive('userMessaging', userMessaging);
 }
