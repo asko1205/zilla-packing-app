@@ -8,20 +8,20 @@ module zillaPackingApp {
     public selected;
     public safeSrcItems;
 
-    static $inject = ["$firebaseObject", "$firebaseArray", "$modal"];
+    static $inject = ["firebaseUrlPrefix", "$modal", "CreateService"];
 
     /* @ngInject */
-    constructor ($firebaseObject, $firebaseArray, private $modal) {
-      var ref = new Firebase("https://zillapack.firebaseio.com");
-      this.items = $firebaseArray(ref);
-      this.safeSrcItems = this.items;
+    constructor (firebaseUrlPrefix, private $modal, private CreateService) {
+
+      this.items = this.CreateService.getItems()
+        .success(() => {
+          this.items = this.CreateService.items;
+          this.safeSrcItems = this.items;
+        });
     }
 
-    public addItem(){
-      this.items.$add({
-        itemName: "watershoes",
-        tags: ["beach", "shoes"]
-      });
+    public addItem(item){
+      this.CreateService.addItem(item);
     }
 
     //-------- modal features ------------

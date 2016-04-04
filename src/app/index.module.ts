@@ -7,6 +7,7 @@
 /// <reference path="index.run.ts" />
 /// <reference path="main/main.controller.ts" />
 /// <reference path="create/create.controller.ts" />
+/// <reference path="create/create.service.ts" />
 /// <reference path="../app/components/navbar/navbar.directive.ts" />
 /// <reference path="../app/components/packingListTable/packingListTable.directive.ts" />
 /// <reference path="../app/components/userMessaging/userMessaging.service.ts" />
@@ -30,6 +31,7 @@ module zillaPackingApp {
 
     .run(RunBlock)
     .service('userMessaging', UserMessaging)
+    .service('CreateService', CreateService)
     .controller('MainController', MainController)
     .controller('CreateController', CreateController)
     .controller('ModalInstanceCtrl', ModalInstanceCtrl)

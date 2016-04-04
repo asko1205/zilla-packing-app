@@ -9,6 +9,7 @@
         "src/app/components/sampleTable/sampleTable.directive.ts",
         "src/app/components/userMessaging/userMessaging.directive.ts",
         "src/app/create/create.controller.ts",
+        "src/app/create/create.service.ts",
         "src/app/main/main.controller.ts",
         "src/app/index.config.ts",
         "src/app/index.module.ts",
