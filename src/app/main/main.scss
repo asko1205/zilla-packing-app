@@ -1,9 +1,9 @@
 .monsterImage{
-	height:700px;
+	height: 200rem;
 	width:auto;
 	position:relative;
-	margin-top: -6em;
-	margin-left: -15em;
+	margin-top: -41rem;
+	margin-left: -15rem;
   opacity: 0.6;
 	z-index:2;
 }
@@ -14,9 +14,9 @@
 
 .mainTitle.welcomeTitle{
 	font-family: $fun-font;
-	font-size:80px;
+	font-size:40px;
 	color: $dark-grey;
-	margin-left: 70px;
+	margin-left: -336px;
 }
 
 .main-selection .select-box{
@@ -28,7 +28,7 @@
 	padding: 10px 10px 10px 10px;
 	margin: 0 0 10px 70px;
 	border-radius:5px;
-	width:674px;
+	width: 300px;
 	cursor:pointer;
 	position:relative;
 	z-index:3;
