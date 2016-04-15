@@ -14,7 +14,7 @@ module zillaPackingApp {
     constructor (firebaseUrlPrefix, private $modal, private CreateService) {
 
       this.items = this.CreateService.getItems()
-        .success(() => {
+        .then(() => {
           this.items = this.CreateService.items;
           this.safeSrcItems = this.items;
         });
