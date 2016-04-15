@@ -37,7 +37,6 @@ module zillaPackingApp {
       }
       return this.$http(req)
         .success((data) =>{
-          this.items.push(data);
           this.userMessaging.showSuccessMessage("Success! Your new item has been added!");
         })
         .error((http, status) => {

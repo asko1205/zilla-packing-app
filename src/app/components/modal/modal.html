@@ -7,7 +7,7 @@
             <p class="form-text-bold"> New item name </p>
         </div>
         <div class="col-md-8">
-          <input type="text" class="form-control newCategoryField" ng-model="mic.newCategoryName"></div>
+          <input type="text" class="form-control" ng-model="mic.newItemName"></div>
         </div>
       </div>
 
@@ -16,7 +16,7 @@
             <p class="form-text-bold"> Tags </p>
         </div>
         <div class="col-md-8">
-          <tags-input ng-model="tags"></tags-input>
+          <tags-input ng-model="mic.tags"></tags-input>
         </div>
       </div>
 
@@ -27,10 +27,10 @@
   </div>
   <div class="modal-footer">
       <user-messaging></user-messaging>
-        <button class="btn btn-primary" type="button" ng-click="mic.ok()">Finished</button>
+        <button class="btn btn-default" type="button" ng-click="mic.ok()">Finished</button>
         <button class="btn btn-default addCategoryImageBtn" ng-click="mic.saveAndAddAnotherItem()" title="Add a new item">
-          <img src="assets/images/add.png" class="addImage addCategoryImage" alt="add"> Save & add another item
+          Save & add another item
         </button>
-        <button class="btn btn-primary" type="button" ng-click="mic.saveItem()">Save</button>
+        <button class="btn btn-default" type="button" ng-click="mic.saveItem()">Save</button>
 
   </div>

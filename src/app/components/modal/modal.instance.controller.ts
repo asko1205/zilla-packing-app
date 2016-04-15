@@ -3,13 +3,15 @@ module zillaPackingApp {
 
   export class ModalInstanceCtrl {
 
-  	static $inject = ["$scope", "$modalInstance", "userMessaging", "$filter"];
-  	public newCategoryName;
+  	static $inject = ["$scope", "$modalInstance", "userMessaging", "$filter", "CreateService"];
+  	public newItemName;
   	public modalErrorMessage;
+    public tags;
+    private CreateService;
 
     /* @ngInject */
-    constructor (private $scope, private $modalInstance, private userMessaging, private $filter) {
-
+    constructor (private $scope, private $modalInstance, private userMessaging, private $filter, CreateService) {
+      this.CreateService = CreateService;
     }
 
     public ok = () => {
@@ -20,9 +22,14 @@ module zillaPackingApp {
   	    this.$modalInstance.dismiss('cancel');
   	}
 
-  	public addItem = () => {
-
-
+  	public saveItem = () => {
+      var tagArray = [];
+      angular.forEach(this.tags, function(value, key) {
+        this.push(value.text);
+      }, tagArray);
+      var newItem = {"itemName":this.newItemName, "tags":tagArray};
+      this.CreateService.addItem(newItem);
+      this.CreateService.items.push(newItem);
   	}
   }
 }

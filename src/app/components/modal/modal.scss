@@ -1,9 +1,20 @@
-.modal-body{
 
-  .form-text-bold{
-      font-weight:700;
-      margin-top:5px;
-      float:right;
-  }
-  
+.form-text-bold{
+    font-weight:700;
+    margin-top:5px;
+    float:right;
+}
+
+tags-input .tags{
+  height: 34px;
+  padding: 2px 7px;
+  margin-left: 5px;
+  width: 369px;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: rgb(85, 85, 85);
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0.8px 0.8px 0.8px 0 #d3d3d3 inset;
 }
